@@ -1,4 +1,5 @@
 ﻿/* COMMON */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 html {
@@ -16,4 +17,16 @@ body {
 
 p {
     color: rgb(85, 85, 85);
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
