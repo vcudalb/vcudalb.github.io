@@ -287,10 +287,18 @@ section {
     border-radius: 2rem;
 }
 
+/*.arrow {*/
+/*    right: -10rem;*/
+/*    bottom: 2.5rem;*/
+/*    position:relative;*/
+/*}*/
+
 .arrow {
     position: absolute;
-    right: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 2.5rem;
+    animation: bounce 1s infinite;
 }
 
 .details-container {
