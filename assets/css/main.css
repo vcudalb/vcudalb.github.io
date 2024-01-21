@@ -371,3 +371,7 @@ footer {
 footer p {
     text-align: center;
 }
+
+.indented-list {
+    margin-left: 10%;
+}
