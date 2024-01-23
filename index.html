@@ -13,360 +13,379 @@
 
 <body>
 
-<nav id="desktop-nav">
-    <div class="logo animated animatedFadeInUp fadeInUp">Vasile Cudalb</div>
-    <div>
-        <ul class="nav-links animated animatedFadeInUp fadeInUp">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+<div class="wrapper">
+    <nav id="desktop-nav">
+        <div class="logo animated animatedFadeInUp fadeInUp">Vasile Cudalb</div>
+        <div>
+            <ul class="nav-links animated animatedFadeInUp fadeInUp">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav id="hamburger-nav">
-    <div class="logo animated animatedFadeInUp fadeInUp">Vasile Cudalb</div>
-    <div class="hamburger-menu animated animatedFadeInUp fadeInUp">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
-</nav>
-
-<section id="profile">
-    <div class="section__pic-container animated animatedFadeInUp fadeInUp">
-        <img src="./assets/images/profile-pic.png" alt="Vasile Cudalb profile picture" style="filter: drop-shadow(10px 10px 5px #3D3B40);"/>
-    </div>
-    <br>
-    <br>
-    <div class="section__text">
-        <h1 class="title home-title">
-            <span class="medium-text"><div>Hello, I'm</div></span>
-            <span>Vasile Cudalb</span>
-            <span class="medium-text">Senior .NET Developer</span>
-        </h1>
-        <br>
-        <div class="btn-container animated animatedFadeInUp fadeInUp">
-            <button class="btn btn-color-2" onclick="window.open('./assets/docs/resume.pdf')">Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Info
-            </button>
-        </div>
-        <br>
-        <hr class="animated animatedFadeInUp fadeInUp">
-        <br>
-        <div id="socials-container animated animatedFadeInUp fadeInUp">
-            <img
-                    src="./assets/images/linkedin.png"
-                    alt="My LinkedIn profile"
-                    class="icon animated animatedFadeInUp fadeInUp"
-                    onclick="location.href='https://www.linkedin.com/in/vasile-cudalb-98441497/'"
-            />
-            <img
-                    src="./assets/images/github.png"
-                    alt="My Github profile"
-                    class="icon animated animatedFadeInUp fadeInUp"
-                    onclick="location.href='https://github.com/vcudalb'"
-            />
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-        <div class="about-details-container">
-            <div class="text-container">
-                <p>
-                    I am an experienced <strong>Senior .NET Engineer</strong> with more than <strong>eight
-                    years</strong> of expertise in the field of software development.
-                </p>
-                <br>
-                <p>
-                    Throughout my career, I have held roles as both a <strong>team leader and a team member</strong>,
-                    which has provided
-                    me with a strong ability to work effectively within a team setting.
-                </p>
-                <br>
-                <p>
-                    I am always <strong>eager to take on intricate challenges and embrace risks without
-                    hesitation </strong>.
-                </p>
-                <br>
-                <p>
-                    My <strong>dedication</strong> to enhancing the development process drives me to continuously
-                    explore new techniques,
-                    approaches, and technologies. By doing so, I strive to create faster, more reliable, reusable,
-                    practical, and user-friendly solutions for clients.
-                </p>
+    <nav id="hamburger-nav">
+        <div class="logo animated animatedFadeInUp fadeInUp">Vasile Cudalb</div>
+        <div class="hamburger-menu animated animatedFadeInUp fadeInUp">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
 
+    <section id="profile">
+        <div class="section__pic-container animated animatedFadeInUp fadeInUp">
+            <img src="./assets/images/profile-pic.png" alt="Vasile Cudalb profile picture"
+                 style="filter: drop-shadow(10px 10px 5px #3D3B40);"/>
+        </div>
+        <br>
+        <br>
+        <div class="section__text">
+            <h1 class="title home-title">
+                <span class="medium-text"><div>Hello, I'm</div></span>
+                <span>Vasile Cudalb</span>
+                <span class="medium-text">Senior .NET Developer</span>
+            </h1>
+            <br>
+            <div class="btn-container animated animatedFadeInUp fadeInUp">
+                <button class="btn btn-color-2" onclick="window.open('./assets/docs/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <br>
+            <hr class="animated animatedFadeInUp fadeInUp">
+            <br>
+            <div id="socials-container animated animatedFadeInUp fadeInUp">
+                <img
+                        src="./assets/images/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon animated animatedFadeInUp fadeInUp"
+                        onclick="location.href='https://www.linkedin.com/in/vasile-cudalb-98441497/'"
+                />
+                <img
+                        src="./assets/images/github.png"
+                        alt="My Github profile"
+                        class="icon animated animatedFadeInUp fadeInUp"
+                        onclick="location.href='https://github.com/vcudalb'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        I am an experienced <strong>Senior .NET Engineer</strong> with more than <strong>eight
+                        years</strong> of expertise in the field of software development.
+                    </p>
+                    <br>
+                    <p>
+                        Throughout my career, I have held roles as both a <strong>team leader and a team member</strong>,
+                        which has provided
+                        me with a strong ability to work effectively within a team setting.
+                    </p>
+                    <br>
+                    <p>
+                        I am always <strong>eager to take on intricate challenges and embrace risks without
+                        hesitation </strong>.
+                    </p>
+                    <br>
+                    <p>
+                        My <strong>dedication</strong> to enhancing the development process drives me to continuously
+                        explore new techniques,
+                        approaches, and technologies. By doing so, I strive to create faster, more reliable, reusable,
+                        practical, and user-friendly solutions for clients.
+                    </p>
+                </div>
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                                src="./assets/images/experience.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p><strong>8+ years</strong> of Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                                src="./assets/images/education.png"
+                                alt="Education icon"
+                                class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p><strong>Licentiate Engineer:</strong> Information
+                            Technologies<br/><strong>Bachelors:</strong>
+                            Automation Engineer Technology/Technician</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <img
-                            src="./assets/images/experience.png"
-                            alt="Experience icon"
-                            class="icon"
-                    />
-                    <h3>Experience</h3>
-                    <p><strong>8+ years</strong> of Software Development</p>
+                    <h2 class="experience-sub-title">Back-End Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
                 <div class="details-container">
-                    <img
-                            src="./assets/images/education.png"
-                            alt="Education icon"
-                            class="icon"
-                    />
-                    <h3>Education</h3>
-                    <p><strong>Licentiate Engineer:</strong> Information Technologies<br/><strong>Bachelors:</strong>
-                        Automation Engineer Technology/Technician</p>
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                    src="./assets/images/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-        <div class="about-containers">
-            <div class="details-container">
-                <h2 class="experience-sub-title">Back-End Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>SASS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>TypeScript</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Material UI</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>PostgreSQL</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Node JS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Express JS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                                src="./assets/images/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
+    <section id="experience">
+        <div class="container-fluid">
+            <div class="row example-split">
+                <p class="section__text__p1">Scout My</p>
+                <h1 class="title">Work Experience</h1>
+                <br>
+                <br>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 class="timeline-title"><a href="https://qinshift.com/" style="color:orangered;">Qinshift</a>
+                                </h2>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>Apr, 2023 - Present</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Senior .NET Engineer</h3>
+                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
+                                    posuere
+                                    ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec
+                                    vitae
+                                    sapien ut libero venenatis faucibus. ullam dictum felis
+                                    eu pede mollis pretium. Pellentesque ut neque. </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 class="timeline-title"><a href="https://softwaremind.com/" style="color:orangered;">Software
+                                    Mind</a></h2>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>Oct, 2022 - Apr, 2023</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Solution Lead</h3>
+                                <p><strong>Fintech solution that provides on-demand access to SME financial
+                                    information.</strong></p>
+
+                                <ul class="indented-list">
+                                    <li>Being in charge of technical solution design process and validation.</li>
+                                    <li>Monitoring and planning the development of technical aspects/debts.</li>
+                                    <li>Improving branching and release strategy workflow.</li>
+                                    <li>Validating user stories readiness from a development perspective.</li>
+                                    <li>Creating architectural diagrams and documentation.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>Jul, 2021 - Oct, 2022</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Senior .NET Engineer</h3>
+                                <p><strong>Betting platform that incorporates both a sportsbook and a back-office
+                                    management tool.</strong></p>
+
+                                <ul class="indented-list">
+                                    <li>Designing and developing high-performance and scalable betting application.</li>
+                                    <li>Analyzing clients needs and software requirements to determine the design
+                                        feasibility within time and performance constraints.
+                                    </li>
+                                    <li>Coming up with architecture solutions for BE team (including diagrams/flow
+                                        charts, communication between micro-services, SDK structure, etc).
+                                    </li>
+                                    <li>Implementation of specifications based on the received tasks including analyzing
+                                        and bug fixing.
+                                    </li>
+                                    <li>Developing lambda functions used to handle betting events.</li>
+                                    <li>Interacting with AWS S3 to store system content and reports.</li>
+                                    <li>Writing documentation on the existing and new functionalities in a structured
+                                        and consistent way.
+                                    </li>
+                                    <li>Implementing new micro-services and setting up the communication between them.
+                                    </li>
+                                    <li>Leading the development team for 8 months.</li>
+                                    <li>Setting up Azure Pipelines for builds and deploy.</li>
+                                    <li>Mentoring internship.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="experience">
-    <div class="container-fluid">
-        <div class="row example-split">
-            <p class="section__text__p1">Scout My</p>
-            <h1 class="title">Work Experience</h1>
-            <br>
-            <br>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                <ul class="timeline timeline-split">
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 class="timeline-title"><a href="https://qinshift.com/" style="color:orangered;">Qinshift</a></h2>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info">
-                            <span>Apr, 2023 - Present</span>
-                        </div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Senior .NET Engineer</h3>
-                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere
-                                ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae
-                                sapien ut libero venenatis faucibus. ullam dictum felis
-                                eu pede mollis pretium. Pellentesque ut neque. </p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="timeline timeline-split">
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 class="timeline-title"><a href="https://softwaremind.com/" style="color:orangered;">Software Mind</a></h2>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info">
-                            <span>Oct, 2022 - Apr, 2023</span>
-                        </div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Solution Lead</h3>
-                            <p><strong>Fintech solution that provides on-demand access to SME financial information.</strong> </p>
-
-                            <ul class="indented-list">
-                                <li>Being in charge of technical solution design process and validation.</li>
-                                <li>Monitoring and planning the development of technical aspects/debts.</li>
-                                <li>Improving branching and release strategy workflow.</li>
-                                <li>Validating user stories readiness from a development perspective.</li>
-                                <li>Creating architectural diagrams and documentation.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info">
-                            <span>Jul, 2021 - Oct, 2022</span>
-                        </div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Senior .NET Engineer</h3>
-                            <p><strong>Betting platform that incorporates both a sportsbook and a back-office management tool.</strong> </p>
-
-                            <ul class="indented-list">
-                                <li>Designing and developing high-performance and scalable betting application.</li>
-                                <li>Analyzing clients needs and software requirements to determine the design feasibility within time and performance constraints.</li>
-                                <li>Coming up with architecture solutions for BE team (including diagrams/flow charts, communication between micro-services, SDK structure, etc).</li>
-                                <li>Implementation of specifications based on the received tasks including analyzing and bug fixing.</li>
-                                <li>Developing lambda functions used to handle betting events.</li>
-                                <li>Interacting with AWS S3 to store system content and reports.</li>
-                                <li>Writing documentation on the existing and new functionalities in a structured and consistent way.</li>
-                                <li>Implementing new micro-services and setting up the communication between them.</li>
-                                <li>Leading the development team for 8 months.</li>
-                                <li>Setting up Azure Pipelines for builds and deploy.</li>
-                                <li>Mentoring internship.</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <footer class="footer">
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Made with ❤️ by Vasile Cudalb</p>
-    </footer>
-    
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Made with ❤️ by Vasile Cudalb</p>
+</footer>
+
 <script src="assets/scripts/main.js"></script>
 </body>
 </html>

@@ -14,9 +14,12 @@
     }
 
     footer {
-        height: 26dvh;
-        position: relative;
-        bottom: -30dvh;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      margin-top: 10%;
+      text-align: center;
+      height: fit-content;
     }
 }
 
@@ -36,9 +39,12 @@
   }
 
   footer {
-    height: 26dvh;
-    position: relative;
-    bottom: -40dvh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin-top: 15%;
+    text-align: center;
+    height: fit-content;
   }
 }
 
@@ -58,9 +64,12 @@
   }
 
   footer {
-    height: 26dvh;
-    position: relative;
-    bottom: -50dvh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin-top: 20%;
+    text-align: center;
+    height: fit-content;
   }
 }
 
@@ -80,9 +89,12 @@
     }
 
     footer {
-        height: 26dvh;
-        position: relative;
-        bottom: -60dvh;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      margin-top: 50%;
+      text-align: center;
+      height: fit-content;
     }
 }
 
@@ -130,9 +142,12 @@
     }
 
     footer {
-        height: 13dvh;
-        position: relative;
-        bottom: 5dvh;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      margin-top: -20%;
+      text-align: center;
+      height: fit-content;
     }
 }
 
@@ -205,8 +220,10 @@
     }
 
     footer {
-        height: 26dvh;
-        position: relative;
-        bottom: -20vh;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      padding: 10%;
+      text-align: center;
     }
 }
