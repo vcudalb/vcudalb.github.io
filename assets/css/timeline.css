@@ -122,7 +122,7 @@
     margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .timeline-split .timeline, .timeline-centered .timeline {
         display: table;
     }
@@ -154,7 +154,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .timeline-centered,
     .timeline-centered .timeline-item,
     .timeline-centered .timeline-info,
