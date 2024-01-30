@@ -154,6 +154,9 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
     flex-grow: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .section-container {
