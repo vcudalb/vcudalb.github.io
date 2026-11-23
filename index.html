@@ -2,654 +2,645 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vasile Cudalb - Portfolio</title>
+    <title>Vasile Cudalb · Staff Software Engineer</title>
+    <meta name="description"
+          content="Vasile Cudalb, Staff Software Engineer with 10+ years building full-stack .NET and Angular systems: event-driven architectures, data migrations and AI-assisted engineering."/>
+    <meta property="og:title" content="Vasile Cudalb · Staff Software Engineer"/>
+    <meta property="og:description"
+          content="10+ years building full-stack .NET and Angular systems: event-driven architecture, migrations and AI-assisted engineering."/>
+    <meta property="og:image" content="./assets/images/profile-pic.png"/>
+    <link rel="icon" href="./assets/images/profile-pic.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link rel="stylesheet" href="assets/css/animation.css"/>
-    <link rel="stylesheet" href="assets/css/timeline.css"/>
-    <link rel="stylesheet" href="assets/css/mediaqueries.css"/>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t) document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {
+            }
+        })();
+    </script>
 </head>
 
 <body>
 
-<div class="wrapper">
-    <nav id="desktop-nav">
-        <div class="logo animated animatedFadeInUp fadeInUp">Vasile Cudalb</div>
-        <div>
-            <ul class="nav-links animated animatedFadeInUp fadeInUp">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24">
+        <path fill="currentColor"
+              d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor"
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm0 .5 9 6 9-6"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
+              d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/>
+    </symbol>
+</svg>
+
+<a class="skip-link" href="#about">Skip to content</a>
+
+<header class="site-header">
+    <nav class="nav container">
+        <a href="#top" class="logo">Vasile<span>.</span>Cudalb</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="ic ic-sun"><use href="#i-sun"/></svg>
+                <svg class="ic ic-moon"><use href="#i-moon"/></svg>
+            </button>
+            <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
+</header>
 
-    <nav id="hamburger-nav">
-        <div class="logo animated animatedFadeInUp fadeInUp">Vasile Cudalb</div>
-        <div class="hamburger-menu animated animatedFadeInUp fadeInUp">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+<main id="top">
 
-    <section id="profile">
-        <div class="section__pic-container animated animatedFadeInUp fadeInUp">
-            <img src="./assets/images/profile-pic.png" alt="Vasile Cudalb profile picture"
-                 style="filter: drop-shadow(10px 10px 5px #3D3B40);"/>
+    <!-- HERO -->
+    <section id="profile" class="hero container">
+        <div class="hero__pic animated animatedFadeInUp fadeInUp">
+            <img src="./assets/images/profile-pic.png" alt="Vasile Cudalb profile picture"/>
         </div>
-        <br>
-        <br>
-        <div class="section__text">
-            <h1 class="title home-title">
-                <span class="medium-text"><div>Hello, I'm</div></span>
-                <span>Vasile Cudalb</span>
-                <span class="medium-text">Senior .NET Developer</span>
+        <div class="hero__text">
+            <a class="status-pill animated animatedFadeInUp fadeInUp" href="https://www.avenga.com/" target="_blank"
+               rel="noopener">
+                <span class="status-pill__dot"></span>
+                Currently at Avenga
+            </a>
+            <h1 class="home-title">
+                <span class="hero__hello">Hello, I'm</span>
+                <span class="hero__name">Vasile Cudalb</span>
+                <span class="hero__role">Staff Software Engineer · .NET &amp; Angular</span>
             </h1>
-            <br>
+            <p class="hero__tagline animated animatedFadeInUp fadeInUp">
+                10+ years designing and delivering scalable, full-stack <strong>.NET</strong> and
+                <strong>Angular</strong> solutions, with a focus on <strong>event-driven architecture</strong>,
+                <strong>data migrations</strong> and <strong>AI-assisted engineering</strong>.
+            </p>
             <div class="btn-container animated animatedFadeInUp fadeInUp">
-                <button class="btn btn-color-2" onclick="window.open('./assets/docs/resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
+                <a class="btn btn-primary" href="./assets/docs/resume.pdf" target="_blank" rel="noopener">
+                    <svg class="ic"><use href="#i-download"/></svg> Download CV
+                </a>
+                <a class="btn btn-ghost" href="#contact">Contact Info</a>
             </div>
-            <br>
-            <hr class="animated animatedFadeInUp fadeInUp">
-            <br>
-            <div id="socials-container animated animatedFadeInUp fadeInUp">
-                <img
-                        src="./assets/images/linkedin.png"
-                        alt="My LinkedIn profile"
-                        class="icon animated animatedFadeInUp fadeInUp"
-                        onclick="location.href='https://www.linkedin.com/in/vasile-cudalb-98441497/'"
-                />
-                <img
-                        src="./assets/images/github.png"
-                        alt="My Github profile"
-                        class="icon animated animatedFadeInUp fadeInUp"
-                        onclick="location.href='https://github.com/vcudalb'"
-                />
+            <div class="socials animated animatedFadeInUp fadeInUp">
+                <a href="https://www.linkedin.com/in/vasile-cudalb-98441497/" target="_blank" rel="noopener"
+                   aria-label="LinkedIn profile">
+                    <svg class="ic"><use href="#i-linkedin"/></svg>
+                </a>
+                <a href="https://github.com/vcudalb" target="_blank" rel="noopener" aria-label="GitHub profile">
+                    <svg class="ic"><use href="#i-github"/></svg>
+                </a>
+                <a href="mailto:cudalb.vasile@gmail.com" aria-label="Email">
+                    <svg class="ic"><use href="#i-mail"/></svg>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="text-container">
-                    <p>
-                        I am an experienced <strong>Senior .NET Engineer</strong> with more than <strong>eight
-                        years</strong> of expertise in the field of software development.
-                    </p>
-                    <br>
-                    <p>
-                        Throughout my career, I have held roles as both a <strong>team leader and a team member</strong>,
-                        which has provided
-                        me with a strong ability to work effectively within a team setting.
-                    </p>
-                    <br>
-                    <p>
-                        I am always <strong>eager to take on intricate challenges and embrace risks without
-                        hesitation </strong>.
-                    </p>
-                    <br>
-                    <p>
-                        My <strong>dedication</strong> to enhancing the development process drives me to continuously
-                        explore new techniques,
-                        approaches, and technologies. By doing so, I strive to create faster, more reliable, reusable,
-                        practical, and user-friendly solutions for clients.
-                    </p>
-                </div>
+    <!-- ABOUT -->
+    <section id="about" class="container reveal">
+        <p class="eyebrow">Get To Know More</p>
+        <h2 class="title">About Me</h2>
 
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img
-                                src="./assets/images/experience.png"
-                                alt="Experience icon"
-                                class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p><strong>8+ years</strong> of Software Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                                src="./assets/images/education.png"
-                                alt="Education icon"
-                                class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p><strong>Licentiate Engineer:</strong> Information
-                            Technologies<br/><strong>Bachelors:</strong>
-                            Automation Engineer Technology/Technician</p>
-                    </div>
-                </div>
-            </div>
+        <div class="stats">
+            <div class="stat"><strong>10+</strong><span>years in software development</span></div>
+            <div class="stat"><strong>4</strong><span>companies, 10 roles</span></div>
+            <div class="stat"><strong>19</strong><span>regulated markets on my latest platform</span></div>
+            <div class="stat"><strong>2</strong><span>dev teams led, plus interns mentored</span></div>
         </div>
-    </section>
 
-    <section id="skills">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Back-End Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                                    src="./assets/images/checkmark.png"
-                                    alt="Experience icon"
-                                    class="icon"
-                            />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+        <div class="about-grid">
+            <div class="card about-text">
+                <p>
+                    I am a <strong>Staff Software Engineer</strong> with more than <strong>a decade</strong> of
+                    experience designing and building full-stack software with <strong>.NET</strong> on the back end
+                    and <strong>Angular</strong> on the front end, across sports betting and
+                    GameTech, fintech, telecom, retail and fund/investing domains.
+                </p>
+                <p>
+                    Lately my focus is <strong>event-driven, multi-tenant platforms</strong>: integration over
+                    <strong>distributed event streaming platforms</strong> and message brokers, reliable delivery
+                    (transactional outbox and reaper patterns), migrating legacy SQL workloads to a lakehouse, and
+                    bringing <strong>AI agents into the daily engineering workflow</strong>.
+                </p>
+                <p>
+                    I have worked both as a <strong>team and solution lead</strong> and as a hands-on engineer. I
+                    enjoy intricate challenges, and I keep looking for new techniques and tools that make delivery
+                    faster, more reliable and easier to maintain.
+                </p>
             </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container-fluid">
-            <div class="row example-split">
-                <p class="section__text__p1">Scout My</p>
-                <h1 class="title">Work Experience</h1>
-                <br>
-                <br>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <ul class="timeline timeline-split">
-                        <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title">
-                                    <a href="https://qinshift.com/" style="color:#D08F74;">Qinshift</a>
-                                </h2>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Apr, 2023 - Present &nbsp;</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Senior .NET Engineer</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
-                                    posuere
-                                    ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec
-                                    vitae
-                                    sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
+            <div class="about-side">
+                <div class="card">
+                    <h3>Education</h3>
+                    <ul class="plain">
+                        <li><strong>Licentiate Engineer, Information Technologies</strong><br/>
+                            <span class="muted">Academy of Economic Studies of Moldova · 2015 – 2019</span></li>
+                        <li><strong>Automation Engineer Technology/Technician</strong><br/>
+                            <span class="muted">Financial Banking College "A. Diordita" · 2011 – 2015</span></li>
                     </ul>
-                    <ul class="timeline timeline-split">
-                        <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title"><a href="https://softwaremind.com/" style="color:#FC6623">Software Mind</a></h2>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Oct, 2022 - Apr, 2023</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Solution Lead</h3>
-                                <p><strong>Fintech solution that provides on-demand access to SME financial
-                                    information.</strong></p>
-
-                                <ul class="indented-list">
-                                    <li>Being in charge of technical solution design process and validation.</li>
-                                    <li>Monitoring and planning the development of technical aspects/debts.</li>
-                                    <li>Improving branching and release strategy workflow.</li>
-                                    <li>Validating user stories readiness from a development perspective.</li>
-                                    <li>Creating architectural diagrams and documentation.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> Architectural Design · Design Patterns · Branching and
-                                    Release strategy · Microservices
-                                </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Jul, 2021 - Oct, 2022</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Senior .NET Developer</h3>
-                                <p><strong>Betting platform that incorporates both a sportsbook and a back-office
-                                    management tool.</strong></p>
-
-                                <ul class="indented-list">
-                                    <li>Designing and developing high-performance and scalable betting application.</li>
-                                    <li>Analyzing clients needs and software requirements to determine the design
-                                        feasibility within time and performance constraints.
-                                    </li>
-                                    <li>Coming up with architecture solutions for BE team (including diagrams/flow
-                                        charts, communication between micro-services, SDK structure, etc).
-                                    </li>
-                                    <li>Implementation of specifications based on the received tasks including analyzing
-                                        and bug fixing.
-                                    </li>
-                                    <li>Developing lambda functions used to handle betting events.</li>
-                                    <li>Interacting with AWS S3 to store system content and reports.</li>
-                                    <li>Writing documentation on the existing and new functionalities in a structured
-                                        and consistent way.
-                                    </li>
-                                    <li>Implementing new micro-services and setting up the communication between them.
-                                    </li>
-                                    <li>Leading the development team for 8 months.</li>
-                                    <li>Setting up Azure Pipelines for builds and deploy.</li>
-                                    <li>Mentoring internship.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> Docker · Git · Microservices · MongoDB · RabbitMQ · Azure
-                                    DevOps · Team Leadership · Mentoring · Microsoft SQL Server · Agile Methodologies ·
-                                    REST APIs · .NET Core
-                                </p>
-                            </div>
-                        </li>
+                </div>
+                <div class="card">
+                    <h3>Languages</h3>
+                    <ul class="lang">
+                        <li><span>Romanian</span><span class="muted">Native</span></li>
+                        <li><span>English</span><span class="muted">Professional</span></li>
+                        <li><span>Russian</span><span class="muted">Professional</span></li>
                     </ul>
-                    <ul class="timeline timeline-split">
-                        <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title">
-                                    <a href="https://stefanini.com/en/emea" style="color:#00008b;">Stefanini EMEA</a>
-                                </h2>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Jan, 2021 - Jul, 2021</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Senior .NET Developer</h3>
-                                <p><strong>Fund and investing portal.</strong></p>
-                                <ul class="indented-list">
-                                    <li>Upgrading/migrating the system from .NET Core 2.0 to .NET Core 3.1.</li>
-                                    <li>Extending the platform with new functionalities based on the PO’s
-                                        requirements.
-                                    </li>
-                                    <li>Covering modules with unit and integration tests.</li>
-                                    <li>Managing secrets and keys by using AWS key vault.</li>
-                                    <li>Adding cron jobs and windows services.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> Git · DevExpress · Entity Framework (EF) Core · NUnit ·
-                                    Monolith · ASP.NET MVC · Microsoft SQL Server · .NET Core
-                                </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Sep, 2019 - Dec, 2020</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Senior .NET Engineer</h3>
-                                <p><strong>Retailer and logistics software provider that enables smooth logistics,
-                                    transactions, operations, and customer journeys.</strong></p>
-
-                                <ul class="indented-list">
-                                    <li>Developing scalable and high-performance REST APIs.</li>
-                                    <li>Extending UI with new components using AngularJS.</li>
-                                    <li>Setting up GitHub Actions for builds, package publishing and deploys.</li>
-                                    <li>Refactoring and increasing performance of the less effective modules of the
-                                        application.
-                                    </li>
-                                    <li>Mentoring internship.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> Docker · PostgreSQL · Dapper ORM · Angular Js · GitHub
-                                    Actions · SpecFlow · NUnit · Microservices · RabbitMQ · Microsoft SQL Server · REST
-                                    APIs · .NET Core
-                                </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Oct, 2017 - Aug, 2019</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">.NET Developer</h3>
-                                <p><strong>Fintech provider of the expert shareholder, pension, remediation and credit
-                                    services.</strong></p>
-
-                                <ul class="indented-list">
-                                    <li>Developing new micro-services including REST APIs and the entire
-                                        communication.
-                                    </li>
-                                    <li>Implementing Auth microservice from scratch using Identity Server.</li>
-                                    <li>Creating MS Server procedures and functions.</li>
-                                    <li>Optimization DB queries using profiler.</li>
-                                    <li>Induction and hand over for new joiners.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> REST APIs · SpecFlow · Tortoise SVN · MongoDB · Redis ·
-                                    .NET Core · Microservices · Entity Framework (EF) Core · Microsoft SQL Server
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="timeline timeline-split">
-                        <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title">
-                                    <a href="https://www.endava.com/" style="color:#FF4500;">Endava</a>
-                                </h2>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Nov, 2016 - Oct, 2017</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">AM .NET Engineer</h3>
-                                <p><strong>Banking and reporting service provider.</strong></p>
-                                <ul class="indented-list">
-                                    <li>Storing, retrieving and manipulating data for future analysis of the system
-                                        capabilities.
-                                    </li>
-                                    <li>Optimizing database’s queries and procedures.</li>
-                                    <li>Validation the workflow to ensure that the desired results are produced.</li>
-                                    <li>Resolving incidents and implementing change requests raised by customers.</li>
-                                    <li>Adding new UI features and functionality using WebForms.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> ASP.NET Web Forms · NUnit · Entity Framework · .NET
-                                    Framework · Monolith · Microsoft SQL Server
-                                </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Jun, 2015 - Oct, 2016</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Junior AM .NET Engineer</h3>
-                                <p><strong>Customer satisfaction measurement dashboard/platform..</strong></p>
-
-                                <ul class="indented-list">
-                                    <li>Modifying existing software to solve the errors, adjusting it to the new hardware and improving its performance.</li>
-                                    <li>Adding new endpoints/functionality (mainly MVC controllers and UI charts).</li>
-                                    <li>Implementing cron jobs in order to sync data with a third party system.</li>
-                                    <li>Leading a team of 4 members during the active development stage.</li>
-                                    <li>Coaching new members during the development period.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> Mentoring · ASP.NET MVC · Team Leadership · .NET Framework · AngularJS · Microsoft SQL Server · TFS · Agile Methodologies
-                                </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>March, 2015 - May, 2015</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Intern AM .NET Engineer</h3>
-                                <p><strong>Internship Program</strong></p>
-
-                                <ul class="indented-list">
-                                    <li>Developing a social network messaging platform based on the obtained knowledge during the internship program.</li>
-                                    <li>Learning core .NET packages, tool, frameworks and approaches.</li>
-                                    <li>Studying Version of Control and CI/CD concept.</li>
-                                    <li>First team collaboration and basic day to day plan of actions.</li>
-                                </ul>
-                                <br>
-                                <p>
-                                    <strong>Skills:</strong> ASP.NET MVC · Entity Framework · .NET Framework · Internet Information Services (IIS) · Git
-                                </p>
-                            </div>
-                        </li>
+                </div>
+                <div class="card">
+                    <h3>Courses</h3>
+                    <ul class="plain">
+                        <li>Docker &amp; Kubernetes: The Practical Guide <span class="muted">· Udemy, 2023</span></li>
+                        <li>Angular: The Complete Guide <span class="muted">· Udemy, 2022</span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Personal Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                                src="./assets/images/project-2.png"
-                                alt="Project 2"
-                                class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Authenticator</h2>
-                    <div class="btn-container">
-                        <button
-                                class="btn btn-color-2 project-btn"
-                                onclick="location.href='https://github.com/vcudalb/authenticator'"
-                        >
-                            Github
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                                src="./assets/images/project-1.png"
-                                alt="Project 1"
-                                class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Gaffer - discord bot</h2>
-                    <div class="btn-container">
-                        <button
-                                class="btn btn-color-2 project-btn"
-                                onclick="location.href='https://github.com/vcudalb/gaffer'"
-                        >
-                            Github
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                                src="./assets/images/project-3.png"
-                                alt="Project 3"
-                                class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Personal portfolio</h2>
-                    <div class="btn-container">
-                        <button
-                                class="btn btn-color-2 project-btn"
-                                onclick="location.href='https://github.com/vcudalb/vcudalb.github.io'"
-                        >
-                            Github
-                        </button>
-                    </div>
-                </div>
+    <!-- SKILLS -->
+    <section id="skills" class="container reveal">
+        <p class="eyebrow">Explore My</p>
+        <h2 class="title">Skills</h2>
+        <p class="legend"><span class="legend__dot"></span> Highlighted skills are the ones most in demand right now</p>
 
+        <div class="skills-grid">
+            <div class="card skill-card skill-card--featured">
+                <span class="skill-tag">Core · 10+ yrs</span>
+                <h3>.NET Back-End</h3>
+                <ul class="chips">
+                    <li class="hl">C#</li>
+                    <li class="hl">.NET 8</li>
+                    <li class="hl">ASP.NET Core Web API</li>
+                    <li class="hl">REST APIs</li>
+                    <li class="hl">gRPC</li>
+                    <li class="hl">Entity Framework Core</li>
+                    <li>Dapper</li>
+                    <li>ADO.NET</li>
+                    <li>SignalR</li>
+                    <li>MediatR</li>
+                    <li>FluentValidation</li>
+                    <li>AutoMapper / Mapster</li>
+                    <li>Hangfire / Quartz</li>
+                    <li>.NET Framework</li>
+                </ul>
+            </div>
+            <div class="card skill-card skill-card--featured">
+                <span class="skill-tag">Core · Full-stack</span>
+                <h3>Angular Front-End</h3>
+                <ul class="chips">
+                    <li class="hl">Angular 18</li>
+                    <li class="hl">TypeScript</li>
+                    <li class="hl">RxJS</li>
+                    <li>Reactive forms</li>
+                    <li>Component architecture</li>
+                    <li>JavaScript</li>
+                    <li>HTML / CSS / Bootstrap</li>
+                    <li>AngularJS</li>
+                    <li>Vue.js</li>
+                    <li>Blazor / Razor</li>
+                </ul>
+            </div>
+            <div class="card skill-card skill-card--featured">
+                <span class="skill-tag">Daily driver</span>
+                <h3>AI-Assisted Engineering</h3>
+                <ul class="chips">
+                    <li class="hl">AI agents</li>
+                    <li class="hl">Claude Code</li>
+                    <li class="hl">GitHub Copilot</li>
+                    <li>ChatGPT</li>
+                    <li class="hl">AI code review</li>
+                    <li class="hl">Agentic workflows</li>
+                    <li class="hl">MCP (Model Context Protocol)</li>
+                    <li class="hl">Prompt engineering</li>
+                    <li>Custom agent skills</li>
+                    <li>Review &amp; coding guidelines for agents</li>
+                    <li>GitLab / Jira / Confluence integration</li>
+                    <li>Human-in-the-loop gates</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-grid skills-grid--4">
+            <div class="card skill-card">
+                <h3>Architecture</h3>
+                <ul class="chips">
+                    <li class="hl">Microservices</li>
+                    <li class="hl">Event-driven architecture</li>
+                    <li class="hl">Distributed systems</li>
+                    <li class="hl">Transactional Outbox</li>
+                    <li class="hl">CQRS</li>
+                    <li>Multi-tenancy</li>
+                    <li>State machines</li>
+                    <li>SOLID &amp; Design Patterns</li>
+                    <li>OpenAPI / Swagger</li>
+                    <li class="hl">OAuth 2.0 / JWT</li>
+                    <li>IdentityServer</li>
+                </ul>
+            </div>
+            <div class="card skill-card">
+                <h3>Messaging &amp; Data</h3>
+                <ul class="chips">
+                    <li class="hl">Apache Kafka</li>
+                    <li>RabbitMQ</li>
+                    <li>Azure Service Bus</li>
+                    <li class="hl">MS SQL Server</li>
+                    <li class="hl">PostgreSQL</li>
+                    <li class="hl">Redis</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li class="hl">Databricks / Delta Lake</li>
+                    <li class="hl">Data &amp; schema migrations</li>
+                    <li>Query &amp; SP tuning</li>
+                </ul>
+            </div>
+            <div class="card skill-card">
+                <h3>Cloud &amp; DevOps</h3>
+                <ul class="chips">
+                    <li class="hl">Docker</li>
+                    <li>Docker Compose</li>
+                    <li class="hl">Kubernetes</li>
+                    <li class="hl">OpenShift</li>
+                    <li class="hl">CI/CD pipelines</li>
+                    <li>GitLab CI</li>
+                    <li>GitHub Actions</li>
+                    <li>Azure DevOps</li>
+                    <li class="hl">PowerShell</li>
+                    <li class="hl">Bash</li>
+                    <li class="hl">AWS (S3, Lambda)</li>
+                    <li class="hl">OpenTelemetry</li>
+                    <li>Metrics &amp; tracing</li>
+                </ul>
+            </div>
+            <div class="card skill-card">
+                <h3>Testing &amp; Quality</h3>
+                <ul class="chips">
+                    <li class="hl">xUnit</li>
+                    <li>NUnit</li>
+                    <li class="hl">Integration testing</li>
+                    <li>SpecFlow (BDD)</li>
+                    <li>Selenium</li>
+                    <li class="hl">k6 performance testing</li>
+                    <li>JMeter</li>
+                    <li>SQL &amp; memory profiling</li>
+                    <li>Code review</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img
-                        src="./assets/images/email.png"
-                        alt="Email icon"
-                        class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:cudalb.vasile@gmail.com">cudalb.vasile@gmail.com</a></p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container reveal">
+        <p class="eyebrow">Scout My</p>
+        <h2 class="title">Work Experience</h2>
+
+        <div class="company">
+            <div class="company__head">
+                <h3><a href="https://www.avenga.com/" target="_blank" rel="noopener">Avenga</a></h3>
+                <span class="muted">Apr 2023 – Present · Chișinău, Moldova</span>
             </div>
-            <div class="contact-info-container">
-                <img
-                        src="./assets/images/linkedin.png"
-                        alt="LinkedIn icon"
-                        class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/vasile-cudalb-98441497/">LinkedIn</a></p>
+            <ol class="timeline">
+                <li class="role">
+                    <div class="role__meta">
+                        <span class="date">Nov 2025 – Present</span>
+                        <span class="badge">Current</span>
+                    </div>
+                    <h4>Staff Software Engineer</h4>
+                    <p class="role__domain"><a href="https://kaizengaming.com/" target="_blank"
+                                                rel="noopener">Kaizen Gaming</a>, one of the world's leading GameTech
+                        companies, operating in 19 markets across four continents. I work on the multi-tenant regulatory
+                        reporting platform.</p>
+                    <ul>
+                        <li>Lead the technical direction of the reporting platform: event-driven integration over
+                            <strong>Apache Kafka</strong> and reliable delivery with the <strong>outbox / reaper</strong>
+                            patterns.</li>
+                        <li><strong>.NET 8</strong> multi-tenant service with one worker host per country and operator
+                            (for example Denmark, Spain, Brazil, Mexico and Portugal) on a shared bootstrapper, and a
+                            state-machine job lifecycle covering scheduling, retries, cancellation and completion.</li>
+                        <li><strong>Kafka</strong>: job lifecycle events are published from one place in the reporting
+                            core. A database flag plus a background reaper give at-least-once delivery, and consumers
+                            are idempotent.</li>
+                        <li><strong>Transactional outbox</strong>: business data and the outbox row are written in one
+                            SQL transaction, then streamed to Kafka topics that feed the data lake. Duplicate and
+                            out-of-order events are guarded against.</li>
+                        <li>Drive the <strong>migration</strong> of legacy SQL Server datasets (financial, lotto and
+                            virtual-game transactions) and their reports to <strong>Databricks / Delta Lake</strong>.
+                            Build and validate jobs ship as Asset Bundles, the new pipelines run in parallel with the
+                            old ones, and results are reconciled before cutover.</li>
+                        <li><strong>SQL Server</strong>: schema and stored-procedure changes, with the deployment order
+                            planned so releases stay zero-downtime.</li>
+                        <li><strong>Angular 18</strong> orchestration back office: report catalogue, run history, and
+                            details views that filter, sort and page. SQL and Databricks runs are shown side by side,
+                            manual reprocess flows have a full audit trail, and typed TypeScript clients call the .NET
+                            APIs.</li>
+                        <li class="ai-moment">Set up the team's <strong>AI engineering assistant</strong> on Claude
+                            Code, and wrote the <strong>review and coding guidelines</strong> its agents follow. The
+                            agents cover MR review, applying review comments, ticket-to-MR implementation, report
+                            scaffolding and deployment go/no-go checks.</li>
+                        <li class="ai-moment">Used AI agents to analyse legacy data flows ahead of the migration. They
+                            mapped about 160 stored procedures and the reports and notebooks that read them, and drafted
+                            the specs, which I then reviewed.</li>
+                        <li class="ai-moment">Put <strong>AI pre-release checks</strong> into the release flow: every
+                            tag-to-tag delta is scanned for risky migrations, Kafka topic and config changes before
+                            production.</li>
+                    </ul>
+                    <p class="tech">.NET 8 · ASP.NET Core · Angular 18 · TypeScript · Apache Kafka · Transactional Outbox ·
+                        Databricks · MS SQL Server · EF Core · Kubernetes · OpenShift · GitLab CI · Claude Code · AI agents ·
+                        MCP</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">May 2025 – Oct 2025</span></div>
+                    <h4>Senior Software Engineer</h4>
+                    <p class="role__domain">Kaizen Gaming: high-performance, scalable reporting platform.</p>
+                    <ul>
+                        <li>Developed a high-performance, scalable reporting platform.</li>
+                        <li>Designed architecture for the backend team: diagrams, flowcharts, communication between
+                            microservices, SDK structure and technical documentation.</li>
+                        <li>Analysed client needs and requirements to check what was feasible within time and
+                            performance limits.</li>
+                        <li>Built front-end and back-end features with test coverage, and handled debugging and bug
+                            fixing.</li>
+                        <li>Built <strong>ASP.NET Core</strong> Web APIs and background workers on <strong>.NET
+                            8</strong> with EF Core, covered by <strong>xUnit</strong> unit and integration tests.</li>
+                        <li>Developed <strong>Angular 18</strong> features for the reporting back office, such as the
+                            report history and details views.</li>
+                        <li>Tuned <strong>SQL Server</strong> queries and stored procedures behind the regulatory
+                            reports, using SQL and memory profiling.</li>
+                        <li>Containerised services with <strong>Docker</strong> and deployed them to
+                            <strong>OpenShift / Kubernetes</strong> through GitHub Actions pipelines.</li>
+                        <li class="ai-moment">Brought <strong>AI-assisted development</strong> into daily work with
+                            <strong>GitHub Copilot</strong>: pair-programming for implementation, unit-test generation
+                            and refactoring.</li>
+                    </ul>
+                    <p class="tech">.NET 8 · MS SQL Server · EF Core · xUnit · Apache Kafka · Microservices · REST APIs ·
+                        Docker · GitHub Actions · OpenShift · Kubernetes · Angular 18 · GitHub Copilot</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">Apr 2023 – Apr 2025</span></div>
+                    <h4>Senior Software Engineer</h4>
+                    <p class="role__domain">Global mobile telco enabler: a scalable platform for data, voice and
+                        messaging services across multiple regions.</p>
+                    <ul>
+                        <li>Developed scalable, well-structured telecom components and REST APIs on the .NET stack.
+                        </li>
+                        <li>Led the <strong>migration from RabbitMQ to Apache Kafka</strong>.</li>
+                        <li>Set up <strong>OpenTelemetry</strong> metrics and distributed tracing.</li>
+                        <li>Wrote and updated technical specifications from functional requirements.</li>
+                        <li>Optimised and refactored underperforming modules, and covered the code with unit and
+                            integration tests.</li>
+                        <li>Configured Azure Pipelines, and wrote Docker Compose and PowerShell deployment scripts.</li>
+                        <li class="ai-moment">Used <strong>ChatGPT</strong> to speed up the RabbitMQ → Kafka migration
+                            (mapping consumers and contracts), and to write tests and deployment scripts.</li>
+                    </ul>
+                    <p class="tech">.NET 8 · MS SQL Server · EF Core · xUnit · RabbitMQ → Kafka · OpenTelemetry ·
+                        Microservices · Docker · Azure DevOps · PowerShell · ChatGPT</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="company">
+            <div class="company__head">
+                <h3><a href="https://softwaremind.com/" target="_blank" rel="noopener">Software Mind</a></h3>
+                <span class="muted">Jul 2021 – Mar 2023 · Chișinău, Moldova</span>
             </div>
+            <ol class="timeline">
+                <li class="role">
+                    <div class="role__meta"><span class="date">Oct 2022 – Mar 2023</span></div>
+                    <h4>Solution Lead</h4>
+                    <p class="role__domain">Fintech solution that provides on-demand access to SME financial
+                        information.</p>
+                    <ul>
+                        <li>Owned the technical solution design process and its validation.</li>
+                        <li>Checked that user stories were ready for development, and planned work on technical
+                            debt.</li>
+                        <li>Improved the branching and release strategy, and triaged front-end and back-end bugs.</li>
+                        <li>Created architecture diagrams and documentation.</li>
+                    </ul>
+                    <p class="tech">Architecture Design · Design Patterns · Branching &amp; Release Strategy ·
+                        Microservices · Agile</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">Jul 2021 – Oct 2022</span></div>
+                    <h4>Senior .NET Developer</h4>
+                    <p class="role__domain">Betting platform with a sportsbook and a back-office management tool.</p>
+                    <ul>
+                        <li>Designed and developed a high-performance, scalable betting platform.</li>
+                        <li>Designed architecture for the backend team: microservice communication, SDK structure and
+                            flow charts.</li>
+                        <li>Improved platform performance with memory and SQL profiling, and built
+                            <strong>k6</strong> performance suites.</li>
+                        <li>Built AWS Lambda functions for betting events, and used S3 for content and reports.</li>
+                        <li><strong>Led the development team for 8 months</strong>, set up Azure Pipelines and mentored
+                            interns.</li>
+                    </ul>
+                    <p class="tech">.NET 5 · MongoDB · MS SQL Server · RabbitMQ · gRPC · AWS · k6 · xUnit · Docker ·
+                        Azure DevOps · Team Leadership</p>
+                </li>
+            </ol>
+        </div>
+
+        <details class="earlier">
+            <summary>
+                <span>Earlier experience: Stefanini EMEA &amp; Endava</span>
+                <span class="muted">2015 – 2021 · 6 roles</span>
+            </summary>
+
+        <div class="company">
+            <div class="company__head">
+                <h3><a href="https://stefanini.com/en/emea" target="_blank" rel="noopener">Stefanini EMEA</a></h3>
+                <span class="muted">Oct 2017 – Jun 2021 · Chișinău, Moldova</span>
+            </div>
+            <ol class="timeline">
+                <li class="role">
+                    <div class="role__meta"><span class="date">Jan 2021 – Jun 2021</span></div>
+                    <h4>Senior .NET Developer</h4>
+                    <p class="role__domain">Fund and investing portal.</p>
+                    <ul>
+                        <li>Upgraded the system from .NET Core 2.0 to .NET Core 3.1.</li>
+                        <li>Extended the platform with new features, covered by unit, integration and JMeter tests.
+                        </li>
+                        <li>Managed secrets with AWS key vault, and added cron jobs and Windows services.</li>
+                    </ul>
+                    <p class="tech">.NET Core 3.1 · ASP.NET MVC · DevExpress · EF Core · NUnit · MS SQL Server · AWS</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">Sep 2019 – Dec 2020</span></div>
+                    <h4>Senior .NET Developer</h4>
+                    <p class="role__domain">Retail and logistics software provider for the grocery, pharmaceutical,
+                        convenience &amp; fuel and fashion industries.</p>
+                    <ul>
+                        <li>Developed scalable, high-performance REST APIs, and helped design a new platform based on
+                            microservices and CQRS.</li>
+                        <li>Built new UI components with AngularJS, and covered features with NUnit and SpecFlow tests.
+                        </li>
+                        <li>Set up GitHub Actions for builds, package publishing and deployments, plus OpenAPI/Swagger.
+                        </li>
+                        <li>Worked directly with clients on technical-debt analysis, and mentored interns.</li>
+                    </ul>
+                    <p class="tech">.NET Core 3.1 · PostgreSQL · Redis · Dapper · RabbitMQ / Azure Service Bus ·
+                        AngularJS · GitHub Actions · SpecFlow</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">Oct 2017 – Aug 2019</span></div>
+                    <h4>.NET Developer</h4>
+                    <p class="role__domain">Fintech provider of shareholder, pension, remediation and credit services.
+                    </p>
+                    <ul>
+                        <li>Developed new microservices, including their REST APIs and communication.</li>
+                        <li>Built an authentication microservice from scratch with IdentityServer.</li>
+                        <li>Wrote SQL Server procedures and functions, and optimised queries with the profiler.</li>
+                        <li>Extended the Vue.js front end, and onboarded new joiners.</li>
+                    </ul>
+                    <p class="tech">.NET Core 2.0 · EF Core · MS SQL Server · MongoDB · Redis · Vue.js · NUnit ·
+                        SpecFlow</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="company">
+            <div class="company__head">
+                <h3><a href="https://www.endava.com/" target="_blank" rel="noopener">Endava</a></h3>
+                <span class="muted">Mar 2015 – Oct 2017 · Chișinău, Moldova</span>
+            </div>
+            <ol class="timeline">
+                <li class="role">
+                    <div class="role__meta"><span class="date">Nov 2016 – Oct 2017</span></div>
+                    <h4>AM .NET Engineer</h4>
+                    <p class="role__domain">Banking and reporting service provider.</p>
+                    <ul>
+                        <li>Developed new application modules and services, and added WebForms UI features.</li>
+                        <li>Optimised database queries and procedures.</li>
+                        <li>Resolved incidents and implemented customer change requests.</li>
+                    </ul>
+                    <p class="tech">.NET Framework 4.7.2 · ASP.NET WebForms · Entity Framework · MS SQL Server · NUnit</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">Jun 2015 – Oct 2016</span></div>
+                    <h4>Junior AM .NET Engineer</h4>
+                    <p class="role__domain">Customer satisfaction measurement dashboard.</p>
+                    <ul>
+                        <li>Added MVC endpoints and UI charts, and built cron jobs that sync data with a third-party
+                            system.</li>
+                        <li><strong>Led a team of 4</strong> during the active development stage, and coached new
+                            members.</li>
+                    </ul>
+                    <p class="tech">ASP.NET MVC · .NET Framework · AngularJS · HighCharts · MS SQL Server · IIS · TFS</p>
+                </li>
+                <li class="role">
+                    <div class="role__meta"><span class="date">Mar 2015 – Jun 2015</span></div>
+                    <h4>Intern .NET Engineer</h4>
+                    <p class="role__domain">Internship programme.</p>
+                    <ul>
+                        <li>Built a social-network messaging platform with what I learned in the programme: core .NET,
+                            version control and CI/CD.</li>
+                    </ul>
+                    <p class="tech">ASP.NET MVC · Entity Framework · IIS · Git</p>
+                </li>
+            </ol>
+        </div>
+        </details>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container reveal">
+        <p class="eyebrow">Browse My Recent</p>
+        <h2 class="title">Personal Projects</h2>
+        <div class="projects-grid">
+            <a class="card project" href="https://github.com/vcudalb/authenticator" target="_blank" rel="noopener">
+                <img src="./assets/images/project-2.png" alt="Authenticator project screenshot" loading="lazy"/>
+                <div class="project__body">
+                    <h3>Authenticator</h3>
+                    <span class="project__link"><svg class="ic"><use href="#i-github"/></svg> View on GitHub</span>
+                </div>
+            </a>
+            <a class="card project" href="https://github.com/vcudalb/gaffer" target="_blank" rel="noopener">
+                <img src="./assets/images/project-1.png" alt="Gaffer Discord bot screenshot" loading="lazy"/>
+                <div class="project__body">
+                    <h3>Gaffer: Discord bot</h3>
+                    <span class="project__link"><svg class="ic"><use href="#i-github"/></svg> View on GitHub</span>
+                </div>
+            </a>
+            <a class="card project" href="https://github.com/vcudalb/vcudalb.github.io" target="_blank" rel="noopener">
+                <img src="./assets/images/project-3.png" alt="Personal portfolio screenshot" loading="lazy"/>
+                <div class="project__body">
+                    <h3>Personal portfolio</h3>
+                    <span class="project__link"><svg class="ic"><use href="#i-github"/></svg> View on GitHub</span>
+                </div>
+            </a>
         </div>
     </section>
-</div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container reveal">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="title">Contact Me</h2>
+        <div class="contact">
+            <a class="card contact__item" href="mailto:cudalb.vasile@gmail.com">
+                <svg class="ic"><use href="#i-mail"/></svg>
+                <span>cudalb.vasile@gmail.com</span>
+            </a>
+            <a class="card contact__item" href="https://www.linkedin.com/in/vasile-cudalb-98441497/" target="_blank"
+               rel="noopener">
+                <svg class="ic"><use href="#i-linkedin"/></svg>
+                <span>LinkedIn</span>
+            </a>
+            <a class="card contact__item" href="https://github.com/vcudalb" target="_blank" rel="noopener">
+                <svg class="ic"><use href="#i-github"/></svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </section>
+</main>
 
 <footer class="footer">
-    <nav>
-        <div class="nav-links-container">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <p>Made with ❤️ by Vasile Cudalb</p>
+    <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>© <span id="year">2026</span> Vasile Cudalb · Made with ❤️</p>
 </footer>
+
+<a href="#top" class="to-top" id="to-top" aria-label="Back to top">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              d="M12 19V5m0 0-6 6m6-6 6 6"/>
+    </svg>
+</a>
 
 <script src="assets/scripts/main.js"></script>
 </body>
